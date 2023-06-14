@@ -12,7 +12,7 @@ pipeline {
 
         NEXUS_URL = "13.232.142.156:8081 "
 
-        NEXUS_REPOSITORY = "springapp2-pipeline2"
+        NEXUS_REPOSITORY = "jenkinsfile-springapp-github"
 
         NEXUS_CREDENTIAL_ID = "nexus_credentials"
     }
