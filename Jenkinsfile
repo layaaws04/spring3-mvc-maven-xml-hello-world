@@ -10,7 +10,7 @@ pipeline {
 
         NEXUS_PROTOCOL = "http"
 
-        NEXUS_URL = "13.232.142.156:8081 "
+        NEXUS_URL = "13.232.142.156:8081"
 
         NEXUS_REPOSITORY = "jenkinsfile-springapp-github"
 
