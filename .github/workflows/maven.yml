@@ -21,13 +21,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: java version
-      run: java -version
-    - name: maven version
-      run: mvn --version
-    - name: python version
-      run: python --version
-    - name: docker version
-      run: docker -v
-    - name: terraform version
-      run: terraform --version
+    - name: Set up JDK 8
+      uses: actions/checkout@v3
+      with:
+       java-version: '8'
+       distribution: 'temurin'
+       cache: maven
+    - name: Build with maven
+      run: mvn package
+      
+    
