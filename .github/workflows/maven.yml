@@ -29,5 +29,7 @@ jobs:
        cache: maven
     - name: Build with maven
       run: mvn package
+    - name: tomcat deply
+      run: curl -v -u admin:admin -T /home/ec2-user/actions-runner/_work/spring3-mvc-maven-xml-hello-world/spring3-mvc-maven-xml-hello-world/target/spring3-mvc-maven-xml-hello-world-1.0-SNAPSHOT.war 'http://ec2-13-232-172-85.ap-south-1.compute.amazonaws.com:8081/manager/text/deploy?path=/github-actions-self-runner'
       
     
